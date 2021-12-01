@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scaleType="centerCrop"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/main_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/art_portrait" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="250sp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:ems="10"
+        android:hint="@string/hint_user_field"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_field"
+        android:layout_marginHorizontal="130sp"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/main_btn" />
+
+    <TextView
+        android:id="@+id/result_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_btn"
+        android:layout_marginTop="50sp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="24sp" />
+
+
+    <Button
+        android:id="@+id/more_btn"
+        android:layout_width="128dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/result_info"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="150sp"
+        android:layout_marginLeft="269dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:backgroundTint="@android:color/transparent"
+        android:text="Більше" />
+</RelativeLayout>
