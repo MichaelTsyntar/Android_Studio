@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">METEO</string>
-    <string name="logo">Погода в твоему місті</string>
+    <string name="logo">Погода в твоему місці</string>
     <string name="hint_user_field">Введіть місто</string>
     <string name="main_btn">Узнати погоду</string>
     <string name="no_user_input">Введіть текст</string>

@@ -6,15 +6,214 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
-    <TextView
-        android:id="@+id/desc_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/main_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/art2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="30sp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/desc1_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35sp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/main_back"
+        app:layout_constraintVertical_bias="0.030" />
+
+    <TextView
+        android:id="@+id/desc2_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc1_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:id="@+id/desc3_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc2_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:id="@+id/desc4_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc3_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:id="@+id/desc5_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc4_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:id="@+id/desc6_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc5_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:id="@+id/desc7_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc6_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:id="@+id/desc8_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc7_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:id="@+id/desc9_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc8_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:id="@+id/desc10_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc9_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:id="@+id/desc11_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc10_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:id="@+id/desc12_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc11_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:id="@+id/desc13_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc12_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:id="@+id/desc14_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc13_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:id="@+id/desc15_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc14_text"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="15sp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

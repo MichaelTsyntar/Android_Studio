@@ -35,9 +35,20 @@ public class MainActivity extends AppCompatActivity {
     private ImageView mainBack;
 
     private String description;
-
-
-
+    private String temp_min;
+    private String temp_max;
+    private String pressure;
+    private String humidity;
+    private String lon;
+    private String lat;
+    private String temp;
+    private String feels_like;
+    private String visibility;
+    private String  speed;
+    private String sunrise;
+    private String sunset;
+    private String timezone;
+    private String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -123,9 +134,25 @@ public class MainActivity extends AppCompatActivity {
 
                 result_info.setText("Температура: " + jsonObject.getJSONObject("main").getDouble("temp"));
 
-                Toast.makeText(MainActivity.this, jsonObject.getJSONArray("weather").getJSONObject(0).getString("description"), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, jsonObject.getJSONArray("weather").getJSONObject(0).getString("description"), Toast.LENGTH_SHORT).show();
+                lon = "Довгота: " +jsonObject.getJSONObject("coord").getString("lon");
+                lat = "Широта: " +jsonObject.getJSONObject("coord").getString("lat");
 
-                description =  jsonObject.getJSONArray("weather").getJSONObject(0).getString("description");
+                temp = "Температура: " + jsonObject.getJSONObject("main").getString("temp");
+                feels_like = "Відчувається як: " + jsonObject.getJSONObject("main").getString("feels_like");
+                temp_min = "Мінімальна температура: " + jsonObject.getJSONObject("main").getString("temp_min");
+                temp_max = "Максимальна температура: " + jsonObject.getJSONObject("main").getString("temp_max");
+                pressure = "Атмосферний тиск: " +jsonObject.getJSONObject("main").getString("pressure");
+                humidity = "Вологість: " +jsonObject.getJSONObject("main").getString("humidity");
+                visibility = "Видимість: "+jsonObject.getString("visibility");
+                speed = "Швидкість вітру: "+jsonObject.getJSONObject("wind").getString("speed");
+                sunrise = "Схід сонця: "+jsonObject.getJSONObject("sys").getString("sunrise");
+                sunset = "Захід сонця: "+jsonObject.getJSONObject("sys").getString("sunset");
+                timezone = "Таймзона: "+jsonObject.getString("timezone");;
+                 name ="Назва міста: "+jsonObject.getString("name");;
+
+                description = "Опис: "+ jsonObject.getJSONArray("weather").getJSONObject(0).getString("description");
+
                 switch (jsonObject.getJSONArray("weather").getJSONObject(0).getString("description")){
 
                     case "ясно" : {
@@ -134,6 +161,16 @@ public class MainActivity extends AppCompatActivity {
                                 .into(mainBack);
                     }break;
                     case "пасмурно" : {
+                        Glide.with(MainActivity.this)
+                                .load(R.drawable.pasmurno)
+                                .into(mainBack);
+                    }break;
+                    case "переменная облачность" : {
+                        Glide.with(MainActivity.this)
+                                .load(R.drawable.pasmurno)
+                                .into(mainBack);
+                    }break;
+                    case "туман" : {
                         Glide.with(MainActivity.this)
                                 .load(R.drawable.pasmurno)
                                 .into(mainBack);
@@ -150,7 +187,23 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
 
                     Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                    intent.putExtra("DESCRIPTION", result);
+                    intent.putExtra("DESCRIPTION1", lon);
+                    intent.putExtra("DESCRIPTION2", lat);
+                    intent.putExtra("DESCRIPTION3", description);
+                    intent.putExtra("DESCRIPTION4", temp);
+                    intent.putExtra("DESCRIPTION5", feels_like);
+                    intent.putExtra("DESCRIPTION6", temp_max);
+                    intent.putExtra("DESCRIPTION7", temp_min);
+                    intent.putExtra("DESCRIPTION8", pressure);
+                    intent.putExtra("DESCRIPTION9", humidity);
+                    intent.putExtra("DESCRIPTION10", visibility);
+                    intent.putExtra("DESCRIPTION11", speed);
+                    intent.putExtra("DESCRIPTION12", sunrise);
+                    intent.putExtra("DESCRIPTION13", sunset);
+                    intent.putExtra("DESCRIPTION14", timezone);
+                    intent.putExtra("DESCRIPTION15", name);
+
+
                     startActivity(intent);
 
                 }
